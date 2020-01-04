@@ -1,0 +1,23 @@
+name: sensasiq
+description: Project Absensi QRCode Berbasis Android
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.0
+  http: any
+  barcode_scan: ^1.0.0
+  convert: ^2.1.1
+  crypto: any
+  shared_preferences: ^0.5.3+1
+
+dev_dependencies:
+  flutter_test: 
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/bg_profil.png
+    - assets/tentang.png
