@@ -10,10 +10,12 @@ dependencies:
   convert: ^2.1.1
   crypto: any
   shared_preferences: ^0.5.3+1
-
+  
 dev_dependencies:
   flutter_test: 
     sdk: flutter
+  flutter_launcher_icons: ^0.7.0
+
 
 flutter:
   uses-material-design: true
@@ -21,3 +23,8 @@ flutter:
     - assets/logo.png
     - assets/bg_profil.png
     - assets/tentang.png
+
+flutter_icons:
+   android: "launcher_icon"
+   ios: true
+   image_path: "assets/logo.png"
