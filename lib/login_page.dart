@@ -142,7 +142,7 @@ class _LoginPageState extends State<LoginPage> {
     );
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.gray,
       body: Center(
         child: ListView(
           shrinkWrap: true,
