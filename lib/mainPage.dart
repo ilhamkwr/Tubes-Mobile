@@ -362,7 +362,7 @@ class MainPage extends StatefulWidget {
   }
 }
 
-class Jadwal {
+class Jadwal. {
   final String namamatkul, waktu, namadosen;
   Jadwal(this.namamatkul, this.waktu, this.namadosen);
 }
