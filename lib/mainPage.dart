@@ -14,7 +14,7 @@ class MainPageState extends State<MainPage> {
     });
     var dataJadwal = json.decode(jadwalRespon.body);
 
-    List<Jadwal> jadwals = [];
+    
     for (var j in dataJadwal) {
       Jadwal jadwal = Jadwal(j["waktu"], j["nama_matkul"], j["nama_dosen"]);
       jadwals.add(jadwal);
