@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   var namamahasiswa, nimnya, passwordnya, deviceidnya, kelasnya;
 
   Future<List> _login() async {
-    final response = await http.post("http://157.230.245.10/sensasiq/api/mahasiswa", body: {
+    final response = await http.post("http://157.230.245.30/sensasiq/api/mahasiswa", body: {
       "nim": nim.text,
     });
 
@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
             ],
           ));
     } else {
-      if (datauser['mahasiswa'][0]['password'] != generateMd5(pass.text) || datauser['mahasiswa'][0]['nim'] != nim.text) {
+      if (datauser['mahasiswa'][0]['password'] != generateMd5(pwd.text) || datauser['mahasiswa'][0]['nim'] != nim.text) {
         showDialog(
             context: context,
             barrierDismissible: false,
