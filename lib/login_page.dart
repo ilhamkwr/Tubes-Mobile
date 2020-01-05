@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
           barrierDismissible: false,
           // ignore: deprecated_member_use
           child: new CupertinoAlertDialog(
-            title: new Text("Tidak Dapat Masuk"),
+            title: new Text("Gagal Masuk"),
             content: new Text(
               "Pengguna Tidak Ditemukan",
               style: new TextStyle(fontSize: 16.0),
