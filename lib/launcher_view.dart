@@ -45,7 +45,7 @@ class _LauncherPageState extends State<LauncherPage> {
             ),
             SizedBox(height: 40.0),
             new Text(
-              "SENSASIQ ",
+              "SENSASIQ APP",
               style: TextStyle(
                 fontSize: 50.0, fontWeight: FontWeight.w100
               ),
