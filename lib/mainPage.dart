@@ -7,7 +7,6 @@ import 'dart:convert';
 class MainPageState extends State<MainPage> {
   var title = 'Scan QR Absensi', indexMenu = 0, idqr, nip;
   String result = "Selamat Datang di SENSASIQ APP";
-  String result = "Selamat Datang di";
 
 
   Future <List<Jadwal>> _getJadwal() async {
@@ -229,7 +228,7 @@ class MainPageState extends State<MainPage> {
                     itemBuilder: (BuildContext context, int index){
                       return ListTile(
                         title: Text("Mata Kuliah : "+snapshot.data[index].namamatkul ?? ''),
-                        subtitle: Text(snapshot.data[index].waktu+"\n Dosen : "+snapshot.data[index].namadosen ?? ''),
+                        subtitle: Text(snapshot.data[index].waktu+"\n Dosen : "+snapshot.data[index].namadosen ?? ''),.
                       );
                     },
                   );
