@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'SENSASIQ',
+      title: 'SENSASIQ_',
       theme: new ThemeData(
        
       ),
