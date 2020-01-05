@@ -6,7 +6,7 @@ import 'dart:convert';
 
 class MainPageState extends State<MainPage> {
   var title = 'Scan QR Absensi', indexMenu = 0, idqr, nip;
-  String result = "Selamat Datang di SENSASIQ APP";
+  String result = "Selamat Datang di SENSASIQ";
 
   Future <List<Jadwal>> _getJadwal() async {
     var jadwalRespon = await http.post('http://192.168.1.8/sensasiq/api/jadwal/jadwal', body: {
@@ -32,7 +32,7 @@ class MainPageState extends State<MainPage> {
 
     List<Riwayat> riwayats = [];
     for (var r in dataRiwayat) {
-      Riwayat riwayat = Riwayat(r["jam"], r["nama_matkul"], r["nama_dosen"]);
+      Riwayat riwayat = Riwayat(r["waktu"], r["nama_matkul"], r["nama_dosen"]);
       riwayats.add(riwayat);
     }
     print(riwayats.length);
