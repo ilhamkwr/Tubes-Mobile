@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
         },
         padding: EdgeInsets.all(12),
         color: Colors.lightBlueAccent,
-        child: Text('Masuk', style: TextStyle(color: Colors.red)),
+        child: Text('Masuk', style: TextStyle(color: Colors.white)),
       ),
     );
 
