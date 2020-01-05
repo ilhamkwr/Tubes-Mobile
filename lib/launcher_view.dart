@@ -51,7 +51,13 @@ class _LauncherPageState extends State<LauncherPage> {
               ),
               textAlign: TextAlign.center,
             ),
-           ,
+            new Text(
+              "Solusi Absensi Cerdas Anti Curang Berbasis QR Code",
+              style: TextStyle(
+                fontSize: 20.0, fontWeight: FontWeight.w200
+              ),
+              textAlign: TextAlign.center,
+            ),
           ] 
         ),
       ),
