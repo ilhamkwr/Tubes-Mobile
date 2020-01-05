@@ -210,7 +210,7 @@ class MainPageState extends State<MainPage> {
             title: new Text(this.title),
             centerTitle: true,
           ),
-          // KONTEN
+          // CONTENT
           body: Container(
             child: FutureBuilder(
               future: _getJadwal(),
