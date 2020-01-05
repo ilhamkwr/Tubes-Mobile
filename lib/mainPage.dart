@@ -32,7 +32,7 @@ class MainPageState extends State<MainPage> {
 
     List<Riwayat> riwayats = [];
     for (var r in dataRiwayat) {
-      Riwayat riwayat = Riwayat(r["waktu"], r["nama_matkul"], r["nama_dosen"]);
+      Riwayat riwayat = Riwayat(r["jam"], r["nama_matkul"], r["nama_dosen"]);
       riwayats.add(riwayat);
     }
     print(riwayats.length);
@@ -296,7 +296,7 @@ class MainPageState extends State<MainPage> {
             centerTitle: true,
           ),
           // KONTEN
-          body: Centre(
+          body: Center(
             child: Text(
               result,
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
