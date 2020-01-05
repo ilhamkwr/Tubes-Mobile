@@ -184,7 +184,7 @@ class MainPageState extends State<MainPage> {
       case 1:
         return new Scaffold(
           appBar: new AppBar(
-            title: new Text(this.title),
+            title: newText(this.title),
             centerTitle: true,
           ),
           // KONTEN
