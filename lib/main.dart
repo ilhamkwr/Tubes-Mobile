@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SENSASIQ',
+      color: Color.blues,
       theme: new ThemeData(
        
       ),
