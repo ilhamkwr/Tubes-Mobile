@@ -56,7 +56,7 @@ class _LauncherPageState extends State<LauncherPage> {
               style: TextStyle(
                 fontSize: 20.0, fontWeight: FontWeight.w200
               ),
-              textAlign: TextAlign.center,.
+              textAlign: TextAlign.center,
             ),
           ] 
         ),
