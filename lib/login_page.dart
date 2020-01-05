@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
             child: new CupertinoAlertDialog(
               title: new Text("Gagal Masuk"),
               content: new Text(
-                "Harap Periksa NIM\natau Kata Sandi",
+                "Harap Periksa NIM\natau Kata Sandi Anda",
                 style: new TextStyle(fontSize: 16.0),
               ),
               actions: <Widget>[

@@ -6,7 +6,7 @@ import 'dart:convert';
 
 class MainPageState extends State<MainPage> {
   var title = 'Scan QR Absensi', indexMenu = 0, idqr, nip;
-  String result = "Selamat Datang di SENSASIQ APP";
+  String result = "Selamat Datang di SENSASIQ";
 
   Future <List<Jadwal>> _getJadwal() async {
     var jadwalRespon = await http.post('http://192.168.43.207/sensasiq/api/jadwal/jadwal', body: {
@@ -80,7 +80,7 @@ class MainPageState extends State<MainPage> {
               setState(() {
                 this.title = 'Jadwal Kuliah';
                 this.indexMenu = 2;
-                this.result = "Ini halaman Jadwal";
+                this.result = "halaman Jadwal";
               });
               Navigator.pop(context);
             },
@@ -92,7 +92,7 @@ class MainPageState extends State<MainPage> {
               setState(() {
                 this.title = 'Riwayat Absensi';
                 this.indexMenu = 3;
-                this.result = "Ini halaman Riwayat";
+                this.result = "halaman Riwayat";
               });
               Navigator.pop(context);
             },
@@ -104,7 +104,7 @@ class MainPageState extends State<MainPage> {
               setState(() {
                 this.title = 'Pengaturan Akun';
                 this.indexMenu = 4;
-                this.result = "Ini halaman Pengaturan";
+                this.result = "halaman Pengaturan";
               });
               Navigator.pop(context);
             },
@@ -119,7 +119,7 @@ class MainPageState extends State<MainPage> {
               setState(() {
                 this.title = 'Bantuan';
                 this.indexMenu = 5;
-                this.result = "Ini halaman Bantuan";
+                this.result = "halaman Bantuan";
               });
               Navigator.pop(context);
             },
@@ -130,7 +130,7 @@ class MainPageState extends State<MainPage> {
               setState(() {
                 this.title = 'Tentang';
                 this.indexMenu = 6;
-                this.result = "Ini halaman Tentang";
+                this.result = "halaman Tentang";
               });
               Navigator.pop(context);
             },
