@@ -296,7 +296,7 @@ class MainPageState extends State<MainPage> {
             centerTitle: true,
           ),
           // KONTEN
-          body: Centre(
+          body: Center(
             child: Text(
               result,
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
