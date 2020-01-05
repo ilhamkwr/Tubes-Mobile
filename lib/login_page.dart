@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
   var namamahasiswa, nimnya, passwordnya, deviceidnya, kelasnya;
 
   Future<List> _login() async {
-    final response = await http.post("http://157.230.245.30/sensasiq/api/mahasiswa", body: {
+    final response = await http.post("http://157.230.245.10/sensasiq/api/mahasiswa", body: {
       "nim": nim.text,
     });
 
