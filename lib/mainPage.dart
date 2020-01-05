@@ -7,6 +7,8 @@ import 'dart:convert';
 class MainPageState extends State<MainPage> {
   var title = 'Scan QR Absensi', indexMenu = 0, idqr, nip;
   String result = "Selamat Datang di SENSASIQ APP";
+  String result = "Selamat Datang di";
+
 
   Future <List<Jadwal>> _getJadwal() async {
     var jadwalRespon = await http.post('http://192.168.1.8/sensasiq/api/jadwal/jadwal', body: {
