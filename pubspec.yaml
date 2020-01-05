@@ -20,7 +20,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/logo.png
+    - assets/logousu.png
     - assets/bg_profil.png
     - assets/tentang.png
 

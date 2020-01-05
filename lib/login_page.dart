@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
             ],
           ));
     } else {
-      if (datauser['mahasiswa'][0]['password'] != generateMd5(pwd.text) || datauser['mahasiswa'][0]['nim'] != nim.text) {
+      if (datauser['mahasiswa'][0]['password'] != generateMd5(pass.text) || datauser['mahasiswa'][0]['nim'] != nim.text) {
         showDialog(
             context: context,
             barrierDismissible: false,
