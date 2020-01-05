@@ -368,6 +368,6 @@ class Jadwal {
 }
 
 class Riwayat {
-  final String riwayatmatkul, riwayatwaktu, riwayatdosen;
+  final_String riwayatmatkul, riwayatwaktu, riwayatdosen;
   Riwayat(this.riwayatwaktu, this.riwayatmatkul, this.riwayatdosen);
 }
