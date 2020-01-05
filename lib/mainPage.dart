@@ -9,7 +9,7 @@ class MainPageState extends State<MainPage> {
   String result = "Selamat Datang di SENSASIQ APP";
 
   Future <List<Jadwal>> _getJadwal() async {
-    var jadwalRespon = await http.post('http://192.168.1.8/sensasiq/api/jadwal/jadwal', body: {
+    var jadwalRespon = await http.post('http://192.168.43.207/sensasiq/api/jadwal/jadwal', body: {
       "nim": widget.nimnya
     });
     var dataJadwal = json.decode(jadwalRespon.body);
@@ -25,7 +25,7 @@ class MainPageState extends State<MainPage> {
   }
 
   Future <List<Riwayat>> _getRiwayat() async {
-    var riwayatRespon = await http.post('http://192.168.1.8/sensasiq/api/absen/absen', body: {
+    var riwayatRespon = await http.post('http://192.168.43.207/sensasiq/api/absen/absen', body: {
       "nim": widget.nimnya
     });
     var dataRiwayat = json.decode(riwayatRespon.body);
@@ -148,7 +148,7 @@ class MainPageState extends State<MainPage> {
         String qrResult = await BarcodeScanner.scan();
         this.result = qrResult;
           this.indexMenu = 1;
-          final response = await http.post("http://192.168.1.8/sensasiq/api/qr/cocok", body: {
+          final response = await http.post("http://192.168.43.207/sensasiq/api/qr/cocok", body: {
            "qr": result,
           });
           var datauser = json.decode(response.body);
@@ -159,7 +159,7 @@ class MainPageState extends State<MainPage> {
           } else {
             this.indexMenu = null;
             nip = datauser['qr'][0]['nip'];
-            final hasil = await http.post("http://192.168.1.8/sensasiq/api/absen/add", body: {
+            final hasil = await http.post("http://192.168.43.207/sensasiq/api/absen/add", body: {
               "id_jadwal": datauser['qr'][0]['qr'].split('-')[0],
               "id_qr": datauser['qr'][0]['id_qr'],
               "nim": widget.nimnya
